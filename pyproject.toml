@@ -1,0 +1,22 @@
+[project]
+name = "kafka-chat"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "cho6019", email = "j01040864205@gmail.com"},
+]
+dependencies = ["tqdm>=4.67.1", "kafka-python>=2.1.5"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[project.scripts]
+chatpro = "kafka-chat.chatpro:main"

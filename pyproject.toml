@@ -17,6 +17,7 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+package-dir = {"" = "src"}
 
 [project.scripts]
-chatpro = "kafka-chat.chatpro:main"
+chatpro = "kafka_chat.chatpro:main"
